@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MobilController;
+use App\Http\Controllers\MotorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('mobil', MobilController::class)->only([
+    'index', 'destroy', 'show', 'store', 'update'
+]);
+Route::resource('motor', MotorController::class)->only([
+    'index', 'destroy', 'show', 'store', 'update'
+]);

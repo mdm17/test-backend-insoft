@@ -15,7 +15,8 @@
         "jenssegers/mongodb": "^3.8",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "mongodb/mongodb": "^1.15"
+        "tightenco/parental": "^1.0",
+        "tymon/jwt-auth": "^1.0@dev"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
